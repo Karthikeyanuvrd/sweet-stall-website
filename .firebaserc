@@ -1,5 +1,9 @@
 {
   "projects": {
-    "default": "sweet-stall-website"
-  }
+    "Production": "mithai-darbar",
+    "default": "mithai-darbar"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
 }

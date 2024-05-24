@@ -5,7 +5,7 @@ import AboutSectionExtention1 from './Components/AboutSectionExtention1.jsx';
 import PopularList from './Components/PopularList.jsx';
 import ContactUs from './Components/ContactUs.jsx';
 import Footer from './Components/Footer.jsx';
-import ProductList from './Components/ProductList.jsx';
+// import ProductList from './Components/ProductList.jsx';
 
 const MainContent = () => {
   return (
@@ -14,7 +14,7 @@ const MainContent = () => {
        <AboutSection />
        <AboutSectionExtention1 />
        <PopularList />
-       <ProductList />
+       {/* <ProductList /> */}
        <ContactUs />
        <Footer />
     </main>

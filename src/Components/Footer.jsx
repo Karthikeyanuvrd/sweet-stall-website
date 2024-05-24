@@ -4,22 +4,32 @@ import FOOTER_IMG from "../assets/img/spring-onion.png";
 import FOOTER_FINACH from "../assets/img/spinach-leaf.png";
 import FOOTER_LEAF from "../assets/img/leaf-branch-4.png";
 
+const logo = "https://firebasestorage.googleapis.com/v0/b/mithai-darbar.appspot.com/o/Hero%20image.png?alt=media&token=1abd5360-9acc-45a8-a855-129679292679";
+const footer1 = "https://firebasestorage.googleapis.com/v0/b/mithai-darbar.appspot.com/o/spring-onion.png?alt=media&token=d1afaa1b-8aad-406a-99ee-273e72e8a6c1";
+const footerFinach = "https://firebasestorage.googleapis.com/v0/b/mithai-darbar.appspot.com/o/spinach-leaf.png?alt=media&token=46335874-2ed6-471c-8de0-598b10f27dac";
+const footerLeaf = "https://firebasestorage.googleapis.com/v0/b/mithai-darbar.appspot.com/o/leaf-branch-4.png?alt=media&token=518a628e-db23-41be-9fbd-cc020bedb1d1";
+
 const Footer = () => {
   return (
-    <footer className='footer'>
+    <footer className='footer' id='footer'>
         <div className="footer-container container grid">
             <div>
-                <a href="#" className="footer-logo">
-                   <img src={LOGO} alt="Logo" />
-                   Sweets
+            <img src={logo} alt="Logo" />
+            </div>
+  
+            <div>
+                <a href="#home" className="footer-logo">
+              
+                   Mithai Darbar
                 </a>
                 <p className="footer-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eligendi nihil suscipit sapiente voluptatibus cumque optio ducimus, et totam quam reiciendis! Eum accusantium repellendus explicabo quidem sit, autem fugiat nulla.
+                    Welcomes You all
                 </p>
+                <p className="orders"> For Orders Call - 7358596129</p>
             </div>
 
             <div className="footer-content">
-                <div>
+                {/* <div>
                     <h3 className="footer-title">
                       Main Menu
                     </h3>
@@ -38,7 +48,7 @@ const Footer = () => {
                            <a href="#" className="footer-link">Contact</a>
                         </li>
                     </ul>
-                </div>
+                </div> */}
                 <div>
                     <h3 className="footer-title">
                       Address
@@ -46,16 +56,19 @@ const Footer = () => {
 
                     <ul className="footer-links">
                         <li>
-                           <a href="#" className="footer-link">XYZ Nagar</a>
+                           <a href="#" className="footer-link">Plot 2, Door 432, Balaji Nagar, Multi Indus.Estate,</a>
                         </li>
                         <li>
-                           <a href="#" className="footer-link">Tiruvanmayur</a>
+                           <a href="#" className="footer-link">Gerugambakkam</a>
                         </li>
                         <li>
                            <a href="#" className="footer-link">Chennai</a>
                         </li>
                         <li>
-                           <a href="#" className="footer-link">Tamil Nadu</a>
+                           <a href="#" className="footer-link">600122</a>
+                        </li> 
+                        <li>
+                           <a href="#" className="footer-link" style={{color:"hsl(19, 64%, 54%)"}}>nalintrp@gmail.com</a>
                         </li>
                     </ul>
                 </div>
@@ -68,24 +81,24 @@ const Footer = () => {
                     </h3>
 
                     <ul className="footer-social">
-                        <a href="#" target='_blank'  className="footer-social-link">
+                        <a href="https://www.facebook.com/ChennaiSweetDelight" target='_blank'  className="footer-social-link">
                             <i className="ri-facebook-circle-fill"></i>
                         </a>
-                        <a href="#" target='_blank' className="footer-social-link">
+                        <a href="https://www.instagram.com/mithaidarbar/" target='_blank' className="footer-social-link">
                             <i className="ri-instagram-fill"></i>
                         </a>
-                        <a href="#" target='_blank' className="footer-social-link">
+                        {/* <a href="#" target='_blank' className="footer-social-link">
                             <i className="ri-twitter-fill"></i>
-                        </a>
+                        </a> */}
                     </ul>
                 </div>
             </div>
 
-          <img src={FOOTER_IMG} alt="Footer image" className='footer-image-png' />
-          <img src={FOOTER_FINACH} className='footer-finach' alt="Finach" />
-          <img src={FOOTER_LEAF} className='footer-leaf' alt="Footer leaf" />
+          <img src={footer1} alt="Footer image" className='footer-image-png' />
+          <img src={footerFinach} className='footer-finach' alt="Finach" />
+          <img src={footerLeaf} className='footer-leaf' alt="Footer leaf" />
           <span className="footer-copy">
-            &#169; Copyright Sweets. All rights reserved
+            &#169; Copyright Mithai Darbar. All rights reserved
           </span>
         </div>
     </footer>

@@ -173,12 +173,12 @@ img {
 }
 
 .nav-logo img{
-  width: 25px;
+  width: 50px;
 }
 .nav-logo p{
   font-size: var(--small-font-size);
   color: var(--first-color-alt);
-  margin-left:-28px;
+  margin-left:-7px;
 }
 .nav-logo:hover{
   color: var(--first-color);
@@ -188,6 +188,7 @@ img {
   cursor: pointer;
 }
 
+/* Tablets */
 @media screen and (max-width: 767px){
   .nav-menu{
     position: fixed;
@@ -269,7 +270,7 @@ img {
 }
 
 .home-img{
-  width: 300px;
+  width: 325px;
   justify-content: center;
 }
 .home-data{
@@ -294,6 +295,9 @@ img {
 .home-description{
   padding: 0 1rem;
   margin-bottom: 2.5rem;
+}
+.home-description p{
+  color: var(--first-color);
 }
 
 .home-leaf-1,
@@ -386,7 +390,9 @@ column-gap: .5rem;
   transform: rotate(60deg) !important;
   opacity: .1 !important;
 }
-
+.about-description{
+  margin-top: 1rem;
+}
 .about-description-highlight{
   color: var(--first-color);
   margin: 5px;
@@ -459,7 +465,7 @@ column-gap: .5rem;
 }
 /*=============== PRODUCTS ===============*/
 .product-svg{
-  height: 15rem;
+  height: 13rem;
 	margin-right: 4rem;
 }
 #envelope {
@@ -497,7 +503,7 @@ column-gap: .5rem;
   }
 }
 .prod-list-form{
-	min-width: 25rem;
+	min-width: 18rem;
 	
 	.title {
 		font-family: 'Pacifico', cursive;
@@ -721,7 +727,10 @@ textarea.form-control {
 .footer-links{
   row-gap: .5rem;
 }
-
+.orders{
+  color: var(--first-color);
+  font-size: var(--h3-font-size);
+}
 .footer-link{
   color: var(--text-color);
   transition: color .3s;
@@ -734,6 +743,8 @@ textarea.form-control {
 .footer-social{
   display: flex;
   column-gap: 1.25rem;
+  align-content: center;
+  justify-content: center;
 }
 
 .footer-social-link{
@@ -754,7 +765,7 @@ textarea.form-control {
 }
 
 .footer-image-png{
-  top: 7.5rem;
+  top: 20.5rem;
   right: 5rem;
   transform: rotate(-45deg);
 }
@@ -1011,7 +1022,7 @@ textarea.form-control {
   .footer-container{
     position: relative;
     grid-template-columns: repeat(1, max-content);
-    justify-content: space-between;
+    justify-content: center;
   }
   .footer-content{
     column-gap: 4rem;

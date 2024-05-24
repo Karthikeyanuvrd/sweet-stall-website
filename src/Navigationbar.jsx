@@ -3,16 +3,17 @@ import LOGO from "./assets/img/Hero image.png";
 import NAV_IMAGE_1 from "./assets/img/leaf-branch-4.png";
 import NAV_IMAGE_2 from "./assets/img/leaf-branch-3.png";
 
+const Logo = 'https://firebasestorage.googleapis.com/v0/b/mithai-darbar.appspot.com/o/Hero%20image.png?alt=media&token=1abd5360-9acc-45a8-a855-129679292679';
 const Navigationbar = () => {
     const [visibleNavbar, setvisibleNavbar] = useState(false);
 
   return (
     <nav className='nav container'>
       <a href="#" className="nav-logo">
-        <img src={LOGO} alt="logo image" />
+        <img src={Logo} alt="logo image" />
         <div>
-        Archana
-        <p>Sweets</p>
+        Mithai
+        <p>Darbar</p>
         </div>
       </a>
 
@@ -66,7 +67,7 @@ const Navigationbar = () => {
                     History
                     </a>
             </li> */}
-            <li className="nav-item" onClick={(e) => {
+            {/* <li className="nav-item" onClick={(e) => {
           setvisibleNavbar(false);
           const activeClass = document.querySelector('.active-link');
           if(activeClass){
@@ -77,7 +78,7 @@ const Navigationbar = () => {
             <a href="#branches" className="nav-link">
                     Branches
                     </a>
-            </li>
+            </li> */}
             <li className="nav-item" onClick={(e) => {
           setvisibleNavbar(false);
           const activeClass = document.querySelector('.active-link');
@@ -86,11 +87,11 @@ const Navigationbar = () => {
           }
           e.currentTarget.classList.add('active-link');
       }}>
-            <a href="#contact" className="nav-link">
+            <a href="#footer" className="nav-link">
                     Contact Us
                     </a>
             </li>
-            <li className="nav-item" onClick={(e) => {
+            {/* <li className="nav-item" onClick={(e) => {
           setvisibleNavbar(false);
           const activeClass = document.querySelector('.active-link');
           if(activeClass){
@@ -101,7 +102,7 @@ const Navigationbar = () => {
             <a href="#feedback" className="nav-link">
                     Feedback
                     </a>
-            </li>
+            </li> */}
         </ul>
               {/* Close button */}
       <div className="nav-close" onClick={() => {

@@ -1,8 +1,12 @@
 import React from 'react';
-import ABOUT_IMG_1 from "../assets/img/sweet-2.jpg";
+import ABOUT_IMG_1 from "../assets/img/Hero image.png";
 import ABOUT_IMG2 from '../assets/img/sweet-1.png';
 // import ABOUT_IMG2 from "../assets/img/about-sushi.png";
 import ABOUT_LEAF from "../assets/img/leaf-branch-1.png";
+
+const hero = "https://firebasestorage.googleapis.com/v0/b/mithai-darbar.appspot.com/o/sweet-5.png?alt=media&token=31115aef-379f-499a-bfc2-4c339e7d686c";
+const sweet1 = "https://firebasestorage.googleapis.com/v0/b/mithai-darbar.appspot.com/o/sweet-1.png?alt=media&token=07ed4cf5-f950-4496-97e5-358f3a7e6ff3";
+const aboutLeaf = "https://firebasestorage.googleapis.com/v0/b/mithai-darbar.appspot.com/o/leaf-branch-1.png?alt=media&token=ee173dac-2ffd-4d05-98f4-f7bd8de3410f";
 
 const AboutSection = () => {
   return (
@@ -14,23 +18,24 @@ const AboutSection = () => {
           </span>
           <h2 className="section-title about-title">
             <div>
-              We provide
-              <img src={ABOUT_IMG_1} alt="About image 1" />
+              We provide 
+              <img src={hero} alt="About image 1" />
+              
             </div>
-
             Tasty Sweets
+ 
           </h2>
 
           <p className="about-description">
-            Today Archana Sweets and Snacks is a synonymous with commitment to quality and high degree of professionalism and use of state of the art technique in the manufacture of sweets, savories and snacks. Our branches of the concern speaks volumes about hygiene and service rendered by the organisation and the trust and reliability that the customers have reposed. Archana Sweets and Snacks caters to all sections of the public, in India - be it the melting mysorepauk of South or the multi variety sonepapdi of the North or the mouth watering rasagolla of East or the ever green dry fruits of the West - Archana Sweets and Snacks is the pioneer in the manufacture of such sweets in the rich tradition of the respective regions.
+          Mithai Darbar is your go-to destination for authentic and delectable Indian sweets. We specialize in creating mouth-watering Rasagulla and Chenna Poda, made with the finest ingredients and traditional recipes.
 
-            Archana Sweets and Snacks is now well established and firmly in saddle as one of the leading and exclusive sweets and savories manufacturer in South India . What started as a humble beginning it has now grown into a turnover concern. The driving force behind the concern now is Mr Raju.
+          At Mithai Darbar, we take pride in our craft and are dedicated to providing our customers with the highest quality sweets. Our journey began under the PMFME Scheme, which has enabled us to bring our passion for sweets to a wider audience
           </p>
         </div>
 
-        <img src={ABOUT_IMG2} alt="About image 2" className="about-img" />
+        <img src={sweet1} alt="About image 2" className="about-img" />
       </div>
-      <img src={ABOUT_LEAF} alt="About leaf" className='about-leaf' />
+      <img src={aboutLeaf} alt="About leaf" className='about-leaf' />
     </section>
   )
 }
