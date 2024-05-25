@@ -27,7 +27,7 @@ const PopularList = () => {
                 <img src={rasogolla} alt="Popular image 1" className="popular-img" />
 
                 <h3 className="popular-name">
-                  Rasogolla
+                  Rasogulla
                 </h3>
                 <span className="popular-description">
                     Indian Sweet

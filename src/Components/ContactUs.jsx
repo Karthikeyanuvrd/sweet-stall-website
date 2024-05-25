@@ -44,7 +44,7 @@ const ContactUs = () => {
     }
 	  };
 	return (
-		<section className='contact section' id='contact'>
+		<section className='contact section' id='feedback'>
 			<div className="contact-container container">
 				<div className="contact-content grid">
 					{/* <img src={CONTACT_IMG} alt="Contact Image" className="contact-img" /> */}
@@ -349,7 +349,7 @@ const ContactUs = () => {
 
 							<form className="prod-list-form" onSubmit={handleSubmit}>
 								<span className="section__subtitle">
-									Contact Us
+									Feedback
 								</span>
 								<div className="form-group position-relative">
 									<input type="text" id="formName" className="form-control form-control-lg thick contact-input" placeholder="Name" name="Name"

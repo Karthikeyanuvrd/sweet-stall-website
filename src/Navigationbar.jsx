@@ -52,7 +52,7 @@ const Navigationbar = () => {
           e.currentTarget.classList.add('active-link');
       }}>
             <a href="#product-list" className="nav-link">
-                    Product List
+                    Popular List
                     </a>
             </li>
             {/* <li className="nav-item" onClick={(e) => {
@@ -67,7 +67,7 @@ const Navigationbar = () => {
                     History
                     </a>
             </li> */}
-            {/* <li className="nav-item" onClick={(e) => {
+            <li className="nav-item" onClick={(e) => {
           setvisibleNavbar(false);
           const activeClass = document.querySelector('.active-link');
           if(activeClass){
@@ -75,10 +75,22 @@ const Navigationbar = () => {
           }
           e.currentTarget.classList.add('active-link');
       }}>
-            <a href="#branches" className="nav-link">
-                    Branches
+            <a href="#menu" className="nav-link">
+                    Menu
                     </a>
-            </li> */}
+            </li>
+                        <li className="nav-item" onClick={(e) => {
+          setvisibleNavbar(false);
+          const activeClass = document.querySelector('.active-link');
+          if(activeClass){
+            activeClass.classList.remove('active-link');
+          }
+          e.currentTarget.classList.add('active-link');
+      }}>
+            <a href="#feedback" className="nav-link">
+                    Feedback
+                    </a>
+            </li>
             <li className="nav-item" onClick={(e) => {
           setvisibleNavbar(false);
           const activeClass = document.querySelector('.active-link');
@@ -91,18 +103,6 @@ const Navigationbar = () => {
                     Contact Us
                     </a>
             </li>
-            {/* <li className="nav-item" onClick={(e) => {
-          setvisibleNavbar(false);
-          const activeClass = document.querySelector('.active-link');
-          if(activeClass){
-            activeClass.classList.remove('active-link');
-          }
-          e.currentTarget.classList.add('active-link');
-      }}>
-            <a href="#feedback" className="nav-link">
-                    Feedback
-                    </a>
-            </li> */}
         </ul>
               {/* Close button */}
       <div className="nav-close" onClick={() => {
